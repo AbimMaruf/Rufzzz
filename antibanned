@@ -1,0 +1,70 @@
+while :
+do
+clear
+echo "                     ===>  NOTE  <==="
+echo ""
+echo ""
+echo ""
+echo "[1] Untuk Mengaktifkan/Menonaktifkan Antibanned, Mohon Untuk Cek Status Antibanned Terlebih Dahulu"
+echo ""
+echo ""
+echo ""
+echo "[2] Jika Ingin Menguninstall Antibannednya, Antibannednya Mohon Dinonaktifkan Dulu"
+echo ""
+echo ""
+echo ""
+echo "[3] Jangan Gunakan Hosts, Kecuali Hosts Original/Bawaan"
+echo ""
+echo ""
+echo ""
+echo "[4] Jangan Gunakan Lib Mod, Data Mod, & Apk Mod"
+echo ""
+echo ""
+echo ""
+echo "[5] Pastikan Jaringan Stabil Agar Tidak Mengalami Error Dalam Pemasangan"
+echo ""
+echo ""
+echo ""
+echo "[6] Hanya Untuk Root User"
+echo ""
+echo ""
+echo ""
+read -p "ANDA SUDAH MEMBACA SEMUA NOTE? [y/n] : " jawab
+if [ $jawab = y ] 2>/dev/null
+then
+echo ""
+echo "PASTIKAN JARINGAN STABIL!"
+echo "Loading..."
+cd
+su -c rm -r /data/data/com.termux/files/home/antibanned
+git clone https://github.com/vikayy/antibanned 2>/dev/null
+git clone https://github.com/vikayy/status 2>/dev/null
+cd antibanned
+bash insert
+exit 0
+elif [ $jawab = n ] 2>/dev/null
+then
+clear
+echo ""
+echo "      ===>  ANTIBANNED PUBG 0.17.0 SEASON 12  <==="
+echo ""
+echo "========================================================"
+echo ""
+echo "     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo "     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo "========================================================"
+echo ""
+echo "            ===>  SUBSCRIBE RGRNS YT  <==="
+exit 0
+else
+echo ""
+echo "Jawab Dengan Benar!"
+echo ""
+read -t 5 -p "Tekan [Enter] Untuk Kembali"
+fi
+done

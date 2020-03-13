@@ -1,0 +1,72 @@
+brand=`su -c getprop ro.product.vendor.brand`
+device=`su -c getprop ro.product.vendor.device`
+model=`su -c getprop ro.product.vendor.model`
+hardware=`su -c cat /proc/cpuinfo | grep '^Hardware' | cut -d' ' -f 2-10`
+android=`su -c getprop ro.build.version.release`
+tanggal=`su -c date +%d`
+bulan=`su -c date +%B`
+tahun=`su -c date +%Y`
+ip=`su -c curl -s http://worldtimeapi.org/api/timezone/Asia/Jakarta.txt | grep '^client_ip' | cut -d' ' -f 2`
+while :
+do
+clear
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "Merek Perangkat : $brand"
+echo "Kode Perangkat : $device"
+echo "Tipe Perangkat : $model"
+echo "Tipe Processor : $hardware"
+echo "Versi Android : $android"
+echo "Tanggal : $tanggal $bulan $tahun"
+echo "IP Address : $ip"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "UNTUK MENDAPATKAN KEY, KONTAK ADMIN RGRNS YT"
+echo "Ketik [exit] untuk keluar"
+echo ""
+read -p "Masukkan KEY : " key
+if [ $key = 29 ] 2>/dev/null
+then
+bash expired
+exit 0
+elif [ $key = 29 ] 2>/dev/null
+then
+clear
+echo ""
+echo "      ===>  ANTIBANNED PUBG 0.17.0 SEASON 12  <==="
+echo ""
+echo "========================================================"
+echo ""
+echo "     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo "     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo "========================================================"
+echo ""
+echo "            ===>  SUBSCRIBE RGRNS YT  <==="
+exit 0
+else
+echo ""
+read -t 5 -p "KEY TIDAK TERDAFTAR"
+fi
+done

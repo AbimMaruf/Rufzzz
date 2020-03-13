@@ -1,0 +1,140 @@
+hijau=`echo -e "\e[32;1m"`
+biru=`echo -e "\e[36;1m"`
+merah=`echo -e "\e[31;1m"`
+kuning=`echo -e "\e[33;1m"`
+ungu=`echo -e "\e[35;1m"`
+putih=`echo -e " \e[37;1m"`
+while :
+do
+clear
+echo ""
+echo $putih"      ===>$hijau  ANTIBANNED$biru PUBG$merah 0.17.0$kuning SEASON$ungu 12$putih <==="
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $merah"     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo $putih"     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $biru"ANTIBANNED V2.5"
+echo $putih"Support PUBGM GL, KR, VN, TW"
+echo $kuning"Made By RGRNS YT"
+echo $hijau"SUBSCRIBE RGRNS YT"
+echo $merah"BACA NOTE SEBELUM MENGGUNAKAN ANTIBANNED!"
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $ungu"                       MAIN MENU"
+echo $putih"==> [1]$merah AKTIFKAN ANTIBANNED"
+echo $putih"==> [2]$hijau INSTALL NO GRASS"
+echo $putih"==> [3] INSTALL GG MOD X-TEAM"
+echo $putih"==> [4]$biru NONAKTIFKAN ANTIBANNED"
+echo $putih"==> [5]$kuning CEK STATUS ANTIBANNED"
+echo $putih"==> [6]$merah INFO CREATOR"
+echo $putih"==> [7] KELUAR"
+echo ""
+echo $hijau"========================================================"
+echo ""
+read -p "$ungu""Masukkan Angka :$putih" pil
+if [ $pil = 1 ] 2>/dev/null
+then
+bash antiban_ON
+elif [ $pil = 2 ] 2>/dev/null
+then
+cd
+echo ""
+echo "Downloading..."
+git clone https://github.com/vikayy/resources 2>/dev/null
+cd antibanned
+su -c cp /data/data/com.termux/files/home/resources/nograss.pak /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak 2>/dev/null
+su -c cp /data/data/com.termux/files/home/resources/nograss.pak /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak 2>/dev/null
+su -c cp /data/data/com.termux/files/home/resources/nograss.pak /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak 2>/dev/null
+su -c cp /data/data/com.termux/files/home/resources/nograss.pak /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak 2>/dev/null
+su -c rm -r /data/data/com.termux/files/home/resources
+echo ""
+echo $putih"===>$hijau NO GRASS TELAH DI INSTALL$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+elif [ $pil = 3 ] 2>/dev/null
+then
+cd
+echo ""
+echo "Downloading..."
+git clone https://github.com/vikayy/resources 2>/dev/null
+cd antibanned
+su -c pm install /data/data/com.termux/files/home/resources/gg.apk
+su -c pm grant com.indo.mod android.permission.READ_EXTERNAL_STORAGE
+su -c pm grant com.indo.mod android.permission.READ_PHONE_STATE
+su -c pm grant com.indo.mod android.permission.SYSTEM_ALERT_WINDOW
+su -c am start -n com.indo.mod/com.indo.mod.YT_DendySinatra 2>/dev/null
+su -c rm -r /data/data/com.termux/files/home/resources
+echo ""
+echo $putih"===>$hijau GG MOD X-TEAM TELAH DI INSTALL$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+elif [ $pil = 4 ] 2>/dev/null
+then
+bash antiban_OFF
+elif [ $pil = 5 ] 2>/dev/null
+then
+echo "$hijau"
+su -c ls /data/data/com.termux/files/home/status
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+elif [ $pil = 6 ] 2>/dev/null
+then
+clear
+echo ""
+echo $putih"      ===>$hijau  ANTIBANNED$biru PUBG$merah 0.17.0$kuning SEASON$ungu 12$putih <==="
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $merah"     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo $putih"     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $putih" ==>$kuning Youtube : RGRNS YT"
+echo $putih" ==>$merah Telegram : @selowwkayy"
+echo $putih" ==>$hijau Instagram : @selowwkayy"
+echo $putih" ==>$biru Grup Telegram : @RGRNSYT"
+echo $putih" ==> Thanks For Support"
+echo ""
+echo $hijau"========================================================"
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+elif [ $pil = 7 ] 2>/dev/null
+then
+clear
+echo ""
+echo $putih"      ===>$hijau  ANTIBANNED$biru PUBG$merah 0.17.0$kuning SEASON$ungu 12$putih <==="
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $merah"     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo $putih"     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $putih"            ===>$merah  SUBSCRIBE$kuning RGRNS$biru YT$putih <==="$putih
+exit 0
+else
+echo ""
+echo $putih"===>$merah PERINTAH TIDAK DIKETAHUI$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+fi
+done

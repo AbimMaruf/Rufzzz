@@ -1,0 +1,113 @@
+hijau=`echo -e "\e[32;1m"`
+biru=`echo -e "\e[36;1m"`
+merah=`echo -e "\e[31;1m"`
+kuning=`echo -e "\e[33;1m"`
+ungu=`echo -e "\e[35;1m"`
+putih=`echo -e " \e[37;1m"`
+status=`su -c ls /data/data/com.termux/files/home/status`
+while :
+do
+clear
+echo ""
+echo $putih"      ===>$hijau  ANTIBANNED$biru PUBG$merah 0.17.0$kuning SEASON$ungu 12$putih <==="
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $merah"     ######    ######   ######   ##     #   ######  "
+echo "     #     #  #         #     #  # #    #  #        "
+echo "     ######   #         ######   #  #   #   ######  "
+echo $putih"     #  #     #   ####  #  #     #   #  #         # "
+echo "     #   #    #      #  #   #    #    # #         # "
+echo "     #    #    ######   #    #   #     ##   ######  "
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $biru"ANTIBANNED V2.5"
+echo $putih"Support PUBGM GL, KR, VN, TW"
+echo $kuning"Made By RGRNS YT"
+echo $hijau"SUBSCRIBE RGRNS YT"
+echo $merah"BACA NOTE SEBELUM MENGGUNAKAN ANTIBANNED!"
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $ungu"                       MAIN MENU"
+echo $putih"==> [1]$merah AKTIFKAN ANTIBANNED"
+echo $putih"==> [2]$hijau INSTALL NO GRASS"
+echo $putih"==> [3] INSTALL GG MOD X-TEAM"
+echo $putih"==> [4]$biru NONAKTIFKAN ANTIBANNED"
+echo $putih"==> [5]$kuning CEK STATUS ANTIBANNED"
+echo $putih"==> [6]$merah INFO CREATOR"
+echo $putih"==> [7] KELUAR"
+echo ""
+echo $hijau"========================================================"
+echo ""
+echo $ungu"Masukkan Angka :$putih"" 4"
+echo ""
+echo "==> [1] PUBGM GL"
+echo "==> [2] PUBGM KR"
+echo "==> [3] PUBGM VN"
+echo "==> [4] PUBGM TW"
+echo ""
+read -p "Pilih Versi PUBGM : " pil
+if [ $status = ANTIBANNED-NONAKTIF ] 2>/dev/null
+then
+echo ""
+echo "ANTIBANNED SUDAH NONAKTIF!"
+echo ""
+read -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+exit 0
+elif [ $pil = 1 ] 2>/dev/null
+then
+version="com.tencent.ig"
+owner=`su -c ls -l /data/data | grep $version | cut -d' ' -f 4`
+su -c chmod 0700 /data/data/$version/files/tss_tmp 2>/dev/null
+su -c chown $owner:$owner /data/data/$version/files/tss_tmp/*.dat 2>/dev/null
+su -c mv /data/data/com.termux/files/home/status/ANTIBANNED-AKTIF /data/data/com.termux/files/home/status/ANTIBANNED-NONAKTIF
+echo ""
+echo $putih"===>$hijau ANTIBAN TELAH DI NONAKTIFKAN$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+exit 0
+elif [ $pil = 2 ] 2>/dev/null
+then
+version="com.pubg.krmobile"
+owner=`su -c ls -l /data/data | grep $version | cut -d' ' -f 4`
+su -c rm /storage/emulated/0/Android/data/$version/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak
+su -c chmod 0700 /data/data/$version/files/tss_tmp 2>/dev/null
+su -c chown $owner:$owner /data/data/$version/files/tss_tmp/*.dat 2>/dev/null
+su -c mv /data/data/com.termux/files/home/status/ANTIBANNED-AKTIF /data/data/com.termux/files/home/status/ANTIBANNED-NONAKTIF
+echo ""
+echo $putih"===>$hijau ANTIBAN TELAH DI NONAKTIFKAN$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+exit 0
+elif [ $pil = 3 ] 2>/dev/null
+then
+version="com.vng.pubgmobile"
+owner=`su -c ls -l /data/data | grep $version | cut -d' ' -f 4`
+su -c rm /storage/emulated/0/Android/data/$version/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak
+su -c chmod 0700 /data/data/$version/files/tss_tmp 2>/dev/null
+su -c chown $owner:$owner /data/data/$version/files/tss_tmp/*.dat 2>/dev/null
+su -c mv /data/data/com.termux/files/home/status/ANTIBANNED-AKTIF /data/data/com.termux/files/home/status/ANTIBANNED-NONAKTIF
+echo ""
+echo $putih"===>$hijau ANTIBAN TELAH DI NONAKTIFKAN$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+exit 0
+elif [ $pil = 4 ] 2>/dev/null
+then
+version="com.rekoo.pubgm"
+owner=`su -c ls -l /data/data | grep $version | cut -d' ' -f 4`
+su -c chmod 0700 /data/data/$version/files/tss_tmp 2>/dev/null
+su -c chown $owner:$owner /data/data/$version/files/tss_tmp/*.dat 2>/dev/null
+su -c mv /data/data/com.termux/files/home/status/ANTIBANNED-AKTIF /data/data/com.termux/files/home/status/ANTIBANNED-NONAKTIF
+echo ""
+echo $putih"===>$hijau ANTIBAN TELAH DI NONAKTIFKAN$putih<==="
+echo ""
+read -t 5 -p "$ungu""Tekan [Enter] Untuk Kembali$putih"
+exit 0
+else
+echo ""
+read -t 5 -p "VERSI PUBGM TIDAK DIKETAHUI"
+fi
+done

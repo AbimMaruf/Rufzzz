@@ -1,0 +1,46 @@
+date=`su -c curl -s http://worldtimeapi.org/api/timezone/Asia/Jakarta.txt | grep '^datetime' | cut -c 11-20`
+exp1="2020-03-07"
+exp2="2020-03-08"
+exp3="2030-03-09"
+while :
+do
+clear
+if [ $date = $exp1 ] || [ $date = $exp2 ] || [ $date = $exp3 ] 2>/dev/null
+then
+bash menu
+exit 0
+else
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo "                   KEY SUDAH EXPIRED"
+echo "   HUBUNGI ADMIN RGRNS YT UNTUK MENDAPATKAN KEY BARU"
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+exit 0
+fi
+done
